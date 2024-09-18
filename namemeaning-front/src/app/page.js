@@ -1,6 +1,5 @@
 "use client"; 
 import React, { useState, useRef } from "react";
-// import List from "@/Components/List";
 import List from "./Components/List";
 import TextField from "@mui/material/TextField";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -8,6 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 import { Divider, InputAdornment } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import "./style/style.css";
+import AddName from "./Components/AddName";
 // import AddName from "./AddName";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Tooltip as ReactTooltip } from "react-tooltip";
@@ -21,26 +21,8 @@ const theme = createTheme({
         },
     },
 });
-const Welcome = ({ origins }) => {
-    // const { uuid } = usePage().props;
+const Welcome = () => {
     const searchinputRef = useRef(null);
-    // useEffect(() => {
-    //     const generateUniqueId = () => {
-    //         let userId = localStorage.getItem("userId");
-    //         if (!userId) {
-    //             const cookieValue = document.cookie.match(
-    //                 "(^|;)\\s*userId\\s*=\\s*([^;]+)"
-    //             );
-    //             userId = cookieValue ? cookieValue.pop() : null;
-    //         }
-    //         if (!userId && uuid) {
-    //             userId = uuid;
-    //             localStorage.setItem("userId", userId);
-    //             document.cookie = `userId=${userId}; path=/`;
-    //         }
-    //     };
-    //     generateUniqueId();
-    // }, [uuid]);
     const [inputText, setInputText] = useState("");
     const [showOverlay, setShowOverlay] = useState(false);
     let inputHandler = (e) => {
@@ -70,12 +52,11 @@ const Welcome = ({ origins }) => {
                         />
                         <div className="leftcontainer">
                             {showOverlay ? (
-                                <>fas</>
-                                // <AddName
-                                //     origins={origins}
-                                //     close={handleActionClick}
-                                //     // language= {addToggle}
-                                // />
+                                <AddName
+                                    // origins={origins}
+                                    close={handleActionClick}
+                                    // language= {addToggle}
+                                />
                             ) : (
                                 <div className="search">
                                     <ThemeProvider theme={theme}>
