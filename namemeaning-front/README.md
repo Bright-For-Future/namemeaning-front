@@ -1,1 +1,1 @@
-## NameMeanign Front
+## NameMeaning Front

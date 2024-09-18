@@ -1,27 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Karla:wght@500;700&family=Lilita+One&family=Mukta:wght@800&family=Nunito:wght@200&family=Oswald:wght@200;500&family=Poppins:wght@300&family=Roboto:wght@400;700;900&family=Russo+One&display=swap");
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+    --background-color: #001d3d;
+    --right-bg-color: #033177;
+    --right-bg-border: rgba(11, 93, 126, 0.3);
+    --text-color-yellow: #ffd60a;
+    --text-header-color: #cca219;
+    --text-primary-color: #003566;
+    --light-color-blue: #8ecae6;
+    --light-color-hover: #c0c0c0;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --text-font: "Karla", sans-serif;
+    --title-text-font: "Croissant One", serif;
+    --description-text-font: "Poppins", sans-serif;
+    --lilita-font: "Lilita One", sans-serif;
+    --mukta-font: "Mukta", sans-serif;
+    --nuito-font: "Nunito", sans-serif;
+    --oswald-font: "Oswald", sans-serif;
+    --roboto-font: "Roboto", sans-serif;
+    --russo-font: "Russo One", sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+}
+/* Chrome, Safari, and other WebKit browsers */
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-color-hover);
+    border-radius: 6px;
+}
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
