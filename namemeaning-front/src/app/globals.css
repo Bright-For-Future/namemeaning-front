@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Karla:wght@500;700&family=Lilita+One&family=Mukta:wght@800&family=Nunito:wght@200&family=Oswald:wght@200;500&family=Poppins:wght@300&family=Roboto:wght@400;700;900&family=Russo+One&display=swap");
 :root {
-    --background-color: #001d3d;
+    --background-color: #000811;
     --right-bg-color: #033177;
     --right-bg-border: rgba(11, 93, 126, 0.3);
     --text-color-yellow: #ffd60a;
@@ -43,4 +43,5 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-color: var(--background-color);
 }

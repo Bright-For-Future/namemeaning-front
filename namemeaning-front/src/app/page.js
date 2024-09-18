@@ -6,11 +6,10 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { IoMdAdd } from "react-icons/io";
 import { Divider, InputAdornment } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import "./style/style.css";
 import AddName from "./Components/AddName";
-// import AddName from "./AddName";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import "./style/style.css";
 const theme = createTheme({
     palette: {
         primary: {
@@ -38,24 +37,10 @@ const Welcome = () => {
             <div className="uppercontainer">
                 <div className="container">
                     <div className="twosides left">
-                        <ReactTooltip
-                            id="language"
-                            place="left"
-                            variant="info"
-                            content="Change Language"
-                            style={{
-                                backgroundColor: "#033177",
-                                color: "white",
-                                fontSize: "12px",
-                                width: "10%",
-                            }}
-                        />
                         <div className="leftcontainer">
                             {showOverlay ? (
                                 <AddName
-                                    // origins={origins}
                                     close={handleActionClick}
-                                    // language= {addToggle}
                                 />
                             ) : (
                                 <div className="search">
@@ -94,7 +79,7 @@ const Welcome = () => {
                                         />
                                     </ThemeProvider>
                                     <span className="span">
-                                        {/* Can't find your name? */}
+                                         Can&qout;t find your name? 
                                         <span onClick={handleActionClick}>
                                             {" "}
                                             Add

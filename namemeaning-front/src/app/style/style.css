@@ -1,5 +1,11 @@
+.topcontainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
 .background {
-    background-color: var(--background-color);
     position: fixed;
     top: 0;
     right: 0;
@@ -21,48 +27,40 @@
     left: 0;
     opacity: 0.12;
 }
-
-.topcontainer {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-}
-
-.uppercontainer {
-    z-index: 90;
-}
-.nametop {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 .container {
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0.5em 1em;
+    padding: 0.5em 0em;
 }
 .twosides {
     width: 100%;
 }
 .left {
     flex-wrap: wrap;
-    flex: 1.5;
+    flex: 1.8;
+} 
+.uppercontainer {
+    z-index: 90;
+}
+.right {
+    flex: 1;
+    background-color: none;
+    border-radius: 10px;
+    border: 2px solid var(--right-bg-border);
 }
 .leftcontainer {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.search {
+    width: 75%;
+    border-radius: 15px;
 }
 .bottomcontent {
     position: fixed;
@@ -77,6 +75,14 @@
 .developer h4 {
     color: var(--light-color-hover);
     font-weight: lighter;
+}
+.nametop {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .sociamedia {
     width: 10em;
@@ -94,12 +100,6 @@
     color: var(--light-color-hover);
     cursor: pointer;
 }
-.right {
-    flex: 0.9;
-    background-color: var(--right-bg-color);
-    border-radius: 10px;
-    border: 2px solid var(--right-bg-border);
-}
 .rightcontainer {
     width: 100%;
     overflow: hidden;
@@ -107,8 +107,6 @@
 .cards {
     margin: 0.5em 0.2em;
     height: 38em;
-    /* height: 10vh; */
-    /* max-height: 39em; */
     overflow-x: hidden;
     overflow-y: scroll;
     cursor: pointer;
@@ -116,7 +114,6 @@
 .cardcontainer {
     width: 100%;
     height: 90vh;
-    /* height: 37em; */
 }
 .addnewbtn {
     display: flex;
@@ -128,8 +125,8 @@
     border-radius: 50%;
     cursor: pointer;
     z-index: 100;
-}
-.addicon {
+} 
+ .addicon {
     border-radius: 50%;
     z-index: 100;
     transform: rotate(0deg);
@@ -158,12 +155,11 @@
 .card span {
     font-size: 1rem;
     font-family: var(--description-text-font);
-    /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
     font-weight: 100;
     font-weight: lighter;
     line-height: 1.1;
     text-align: justify;
-}
+} 
 .meaning {
     display: flex;
     align-items: center;
@@ -178,7 +174,7 @@
     width: 40ch;
     font-family: var(--description-text-font);
     font-weight: 100;
-}
+} 
 .cardTop:hover {
     background-color: rgba(27, 146, 226, 0.1);
     border-radius: 10px;
@@ -210,11 +206,7 @@ h1 {
     font-size: 40px;
     color: rgb(1, 1, 59);
 }
-.search {
-    width: 75%;
-    border-radius: 15px;
-    /* color: var(--text-header-color) !important; */
-}
+
 .optiontochange {
     padding: 0.5em;
 }
@@ -233,17 +225,15 @@ h1 {
     position: relative;
     cursor: pointer;
 }
-/*  */
-.dropdowncontent {
+ .dropdowncontent {
     display: flex;
     position: absolute;
     top: 100%;
     right: 0;
     background: rgb(1, 76, 110);
-    /* padding: 0.6em; */
     color: var(--light-color-hover);
     border: 1px solid rgb(0, 89, 255);
-}
+} 
 
 .dropdown {
     display: flex;
@@ -362,7 +352,6 @@ h1 {
     padding-bottom: 6px;
     font-weight: 700;
     border-width: 3px;
-    /* border-image: linear-gradient(to right, #11998e, #38ef7d); */
     border-image-slice: 1;
 }
 .namefield:required,
@@ -396,7 +385,7 @@ h1 {
 }
 button {
     all: unset;
-}
+} 
 .divider {
     height: 30px;
     align-items: flex-end;
@@ -506,7 +495,7 @@ textarea:focus {
     border-radius: 0 0 4px 4px;
     color: var(--light-color-hover);
     background-color: rgba(69, 90, 117, 0.2);
-}
+} 
 .notdisplay {
     display: none;
 }
@@ -592,7 +581,7 @@ textarea {
         cursor: text;
         top: 1.4em;
     }
-}
+} 
 textarea:focus {
     ~ .formlabel {
         position: absolute;
@@ -607,7 +596,6 @@ textarea:focus {
     padding-bottom: 16px;
     font-weight: 700;
     border-width: 3px;
-    /* border-image: linear-gradient(to right, #11998e, #38ef7d); */
     border-image-slice: 1;
 }
 @media screen and (max-width: 980px) {
@@ -653,8 +641,7 @@ textarea:focus {
     body {
         overflow-y: scroll;
     }
-}
-
+} 
 .error-page {
     display: flex;
     flex-direction: column;

@@ -39,7 +39,6 @@ const AddName = ({ close }) => {
         setCustomValue(e.target.value);
     };
 
-
     return (
         <div className="newnamecontainer">
             <div>
@@ -79,10 +78,10 @@ const AddName = ({ close }) => {
                                     width: "100%",
                                 }}
                             />
-                            {/* <InputError
-                                message={errors.name}
+                            <InputError
+                                // message={errors.name}
                                 className="mt-2"
-                            /> */}
+                            />
                         </div>
                         <div className="cont">
                             <div
@@ -147,10 +146,10 @@ const AddName = ({ close }) => {
                                     width: "100%",
                                 }}
                             />
-                            {/* <InputError
-                                message={errors.origins}
+                            <InputError
+                                // message={errors.origins}
                                 className="mt-2"
-                            /> */}
+                            />
                         </div>
                     </div>
                     <div className="cont">
@@ -184,10 +183,10 @@ const AddName = ({ close }) => {
                                 width: "100%",
                             }}
                         />
-                        {/* <InputError
-                            message={errors.description}
+                        <InputError
+                            // message={errors.description}
                             className="mt-2"
-                        /> */}
+                        />
                     </div>
                 </div>
                 <div className="button">
